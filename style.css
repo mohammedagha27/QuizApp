@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background:linear-gradient(135deg, #322cf6 0%,#dc2e45 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color:#3a0ca3 ;
+    width: 40%;
+    color: #fff;
+    border-radius: 15px;
+    /* padding: 15px; */
+}
+.container .quizHeader{
+    background-color:#4361ee ;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.container .quizHeader h2{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+}
+.container .quizAns{
+  padding: 0 0 20px 0;
+}
+.container .quizAns .answer{
+  padding: 15px 20px;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+.container .quizAns .answer.active{
+  background-color: #f72585;
+}
+.container .quizAns .answer:hover{
+  background-color: #f72585;
+}
+.container .quizAns .answer label{
+  margin-left: 5px;
+}
+.container .quizAns .answer input{
+  display: none;
+}
+.container .quizAns .answer{
+  border-bottom: 2px solid rgba(238, 238, 238, 0.152);
+}
+
+.container .btn{
+width: 100%;
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+}
+.container button{
+  width: 90px;
+  height: 35px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background-color: #f72585;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.quizData{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quizData .bullits{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+}
+.quizData .timer{
+    flex: 1;
+    text-align: right;
+}
+.quizData .bullits span{
+    display: block;
+    width:15px ;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 2px;
+}
+.quizData .bullits span.active{
+    background-color: #f72585;
+}
